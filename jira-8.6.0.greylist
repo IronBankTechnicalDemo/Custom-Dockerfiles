@@ -1,0 +1,446 @@
+{
+  "image_name": "jira/jira8.6.1",
+  "image_tag": "1.0.0",
+  "image_parent_name": "ubi/ubi7-golden",
+  "image_parent_tag": "7.7",
+  "container_owner": "stoygates@cloudfitsoftware.com",
+  "authorized_approvers": [
+      ""
+  ],
+  "report_s3": "",
+  "whitelisted_vulnerabilities": [
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "com.thoughtworks.xstream_xstream",
+      "vuln_source": "Twistlock",
+      "vulnerability": "CVE-2019-10173"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "com.fasterxml.jackson.core_jackson-databind",
+      "vuln_source": "Twistlock",
+      "vulnerability": [
+        "CVE-2017-15095",
+        "CVE-2018-7489",
+        "CVE-2018-14718",
+        "CVE-2018-14719",
+        "CVE-2018-14720",
+        "CVE-2018-14721",
+        "CVE-2018-19362",
+        "CVE-2018-19361",
+        "CVE-2018-19360"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "commons-fileupload_commons-fileupload",
+      "vuln_source": "Twistlock",
+      "vulnerability": "CVE-2016-1000031"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "org.eclipse.jetty_jetty-io",
+      "vuln_source": "Twistlock",
+      "vulnerability": [
+        "CVE-2017-7657",
+        "CVE-2017-7658"
+      ]
+    },
+    {
+      "approved_by": "nicolas.m.chaillan.civ@mail.mil",
+      "approved_date": "11 Oct 2019",
+      "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+      "status": "approved",
+      "vuln_description": "Python-2.7.5",
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2014-1912"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "analytics-client-5.8.0.jar:jackson-databind",
+        "jackson-databind-2.3.2.jar",
+        "ehcache-2.10.2-atlassian-18.jar:jackson-databind"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2019-17531",
+        "CVE-2019-17267",
+        "CVE-2019-16943",
+        "CVE-2019-16942",
+        "CVE-2019-16335",
+        "CVE-2019-14540",
+        "CVE-2018-5968",
+        "CVE-2018-11307"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "analytics-client-5.8.0.jar:log4j",
+        "atlassian-whisper-plugin-2.0.8.jar:log4j",
+        "password-cipher-cli-1.0.15.jar:log4j"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2019-17571"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "xstream-1.4.11.1.jar",
+        "xstream-1.4.9.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2017-7957",
+        "CVE-2016-3674"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "jackson-module-scala-2.10-provider-plugin-0.5.jar:scala-reflect-2.10.3.jar",
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2017-15288"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "jira-admin-helper-plugin-5.0.1.jar",
+        "jira-core-project-templates-7.0.4.jar",
+        "jira-core-project-templates-api-7.0.4.jar",
+        "jira-dnd-attachment-plugin-5.0.7.jar",
+        "jira-fileviewer-plugin-8.0.0.jar",
+        "jira-importers-bitbucket-plugin-3.1.1.jar",
+        "jira-tzdetect-plugin-3.0.3.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2019-8443",
+        "CVE-2019-8442",
+        "CVE-2019-3399"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "jira-admin-helper-plugin-5.0.1.jar",
+        "jira-core-project-templates-7.0.4.jar",
+        "jira-core-project-templates-api-7.0.4.jar",
+        "jira-dnd-attachment-plugin-5.0.7.jar",
+        "jira-importers-bitbucket-plugin-3.1.1.jar",
+        "jira-tzdetect-plugin-3.0.3.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2018-5231",
+        "CVE-2016-4319"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "jira-admin-helper-plugin-5.0.1.jar",
+        "jira-core-project-templates-7.0.4.jar",
+        "jira-core-project-templates-api-7.0.4.jar",
+        "jira-dnd-attachment-plugin-5.0.7.jar",
+        "jira-fileviewer-plugin-8.0.0.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2019-11581"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "jira-admin-helper-plugin-5.0.1.jar",
+        "jira-dnd-attachment-plugin-5.0.7.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2017-5983"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "sqlite-jdbc-3.7.2.jar",
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2019-8457",
+        "CVE-2019-19646",
+        "CVE-2018-8740",
+        "CVE-2018-20506",
+        "CVE-2018-20346",
+        "CVE-2015-5895",
+        "CVE-2015-3416",
+        "CVE-2015-3415",
+        "CVE-2015-3414",
+        "CVE-2017-10989"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "redmine-java-api-2.2.0.jar",
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2017-18026",
+        "CVE-2017-15577",
+        "CVE-2017-15576",
+        "CVE-2017-15575",
+        "CVE-2017-15572",
+        "CVE-2015-8474"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "commons-fileupload-1.2.2.jar",
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2016-3092",
+        "CVE-2014-0050"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "commons-beanutils-1.6.1.jar",
+      "vuln_source": "Anchore",
+      "vulnerability": [
+        "CVE-2019-10086",
+        "CVE-2014-0114"
+      ]
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": "protobuf-java-3.0.2.jar",
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2015-5237"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "tomcat-juli.jar",
+        "tomcat-api.jar",
+        "tomcat-coyote.jar",
+        "tomcat-dbcp.jar",
+        "tomcat-i18n-es.jar",
+        "tomcat-i18n-fr.jar",
+        "tomcat-i18n-ja.jar",
+        "tomcat-i18n-ru.jar",
+        "tomcat-jni.jar",
+        "tomcat-util.jar",
+        "tomcat-util-scan.jar",
+        "tomcat-websocket.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2019-17563"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "xstream-1.4.11.1.jar",
+        "plugin-jira-1.20.3.jar:xstream",
+        "xstream-1.4.9.jar"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2013-7285"
+    },
+    {
+        "approved_by": "nicolas.m.chaillan.civ@mail.mil",
+        "approved_date": "11 Oct 2019",
+        "justification": "Per Red Hat, this vulnerability is targeted to be addressed in a future release",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2019-9636"
+    },
+    {
+        "approved_by": "taylor@redhat.com",
+        "approved_date": "9 Oct 2019",
+        "justification": "Per Red Hat, this vulnerability is targeted to be addressed in a future release",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2019-9948"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version",
+      "status": "",
+      "vuln_description": [
+        "jackson-databind-2.3.3",
+        "jackson-databind-2.3.2",
+        "jackson-databind-2.6.7.1"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2019-20330"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Package included in Jira installer. Latest version of Jira does not address vulnerability. Will be addressed in later version. Fixed in Jackson-databind 2.9.10.2.",
+      "status": "",
+      "vuln_description": [
+        "jackson-databind-2.3.3",
+        "jackson-databind-2.3.2",
+        "jackson-databind-2.6.7.1"
+      ],
+      "vuln_source": "Twistlock",
+      "vulnerability": "CVE-2019-20330"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Part of the Python 2.7.5 included with Rhel 7.7.",
+      "status": "",
+      "vuln_description": [
+        "Python-2.7.5"
+      ],
+      "vuln_source": "Anchore",
+      "vulnerability": "CVE-2019-13404"
+    },
+    {
+        "approved_by": "taylor@redhat.com",
+        "approved_date": "9 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2018-14647"
+    },
+    {
+        "approved_by": "taylor@redhat.com",
+        "approved_date": "9 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2018-1061"
+    },
+    {
+        "approved_by": "taylor@redhat.com",
+        "approved_date": "9 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2018-1060"
+    },
+    {
+        "approved_by": "taylor@redhat.com",
+        "approved_date": "9 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2018-1000030"
+    },
+    {
+        "approved_by": "taylor@redhat.com",
+        "approved_date": "9 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2017-17522"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "
+      "status": "",
+      "vuln_description": "org.eclipse.jetty_jetty-, Jetty through 9.4.x is prone to a timing channel in util/security/Password.java, which makes it easier for remote attackers to obtain access by observing elapsed times before rejection of incorrect passwords.",
+      "vuln_source": "Twistlock",
+      "vulnerability": "CVE-2017-9735"
+    },
+    {
+      "approved_by": "",
+      "approved_date": "",
+      "justification": "Fixed in jetty-io version 9.4.11/9.3.24, but it is built into the Java in this package. So would require Java fixing it in their code.",
+      "status": "",
+      "vuln_description": "org.eclipse.jetty_jetty-io",
+      "vuln_source": "Twistlock",
+      "vulnerability": "CVE-2017-7656"
+    },
+    {
+        "approved_by": "nicolas.m.chaillan.civ@mail.mil",
+        "approved_date": "11 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2016-5636"
+    },
+    {
+        "approved_by": "nicolas.m.chaillan.civ@mail.mil",
+        "approved_date": "11 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2017-1000158"
+    },
+    {
+        "approved_by": "nicolas.m.chaillan.civ@mail.mil",
+        "approved_date": "11 Oct 2019",
+        "justification": "False finding.  Anchore is investigating - Python 2.7.5 as shipped with RHEL7 has backported fixes which includes this one.",
+        "status": "approved",
+        "vuln_description": "Python-2.7.5",
+        "vuln_source": "Anchore",
+        "vulnerability": "CVE-2015-5652"
+    },
+  ]
+}
