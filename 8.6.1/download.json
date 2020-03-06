@@ -1,0 +1,14 @@
+{
+    "resources": [
+        {
+            "url": "https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-8.6.1.tar.gz",
+            "filename": "atlassian-jira-software-8.6.1.tar.gz",
+            "sha256": "dd8668b8aafdf4a0835375080f37f135bbb5fd36ad98fd54064b789a8e6ec51f"
+        },
+        {
+            "url": "https://github.com/krallin/tini/releases/download/v0.18.0/tini",
+            "filename": "tini",
+            "sha256": "12d20136605531b09a2c2dac02ccee85e1b874eb322ef6baf7561cd93f93c855"
+        }
+    ]
+}
